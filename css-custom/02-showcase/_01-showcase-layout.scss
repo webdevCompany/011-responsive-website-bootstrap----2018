@@ -1,0 +1,124 @@
+// showcase layout
+
+.showcase-bg {
+  width: 100%;
+  height: 510px;
+  background: url('../../images/01-showcase/1366/showcase-lg-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  transition: all 0.5s;
+}
+
+// animation for .showcase-bg  it takes 100% width and height
+// Layer that hides the showcase intro animation
+.cover-intro {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 510px;
+  background-color: $cover-intro--bg;
+}
+
+.row-outter-showcase-section {
+  width: 100%;
+  min-height: 510px;
+  color: $light-grey;
+  .col-xs-12,
+  .col-sm-12,
+  .col-md-12,
+  .col-lg-12 {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+
+// Media queries
+@media screen and (max-width: 1199px) {
+  .container-fluid.showcase-bg {
+    min-height: 420px;
+    height: 420px;
+  }
+
+  .row-outter-showcase-section {
+    min-height: 420px;
+    height: 420px;
+    background: url('../../images/01-showcase/1200/showcase-md-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .showcase {
+    min-height: 420px;
+    height: 420px;
+  }
+
+  .cover-intro {
+    height: 420px;
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .container-fluid.showcase-bg {
+    min-height: 370px;
+    height: 370px;
+  }
+
+  .row-outter-showcase-section {
+    height: 370px;
+    min-height: 370px;
+    background: url('../../images/01-showcase/992/showcase-sm-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .showcase {
+    min-height: 370px;
+    height: 370px;
+  }
+
+  .cover-intro {
+    height: 370px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container-fluid.showcase-bg {
+    background: url('../../images/01-showcase/768/showcase-xs-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container-fluid.showcase-bg {
+    min-height: 0px;
+    height: auto;
+    padding-bottom: 0px;
+  }
+
+  .showcase {
+    min-height: 0px;
+    height: auto;
+    padding-bottom: 0px;
+  }
+
+  .cover-intro {
+    height: 420px;
+    padding-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .container-fluid.showcase-bg {
+    min-height: 340px;
+    height: 340px;
+  }
+
+  .row-outter-showcase-section {
+    min-height: 340px;
+    height: 340px;
+  }
+}

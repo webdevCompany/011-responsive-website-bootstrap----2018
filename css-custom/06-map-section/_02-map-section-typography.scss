@@ -1,0 +1,43 @@
+// map typography
+.section-map-h2-header {
+  font-family: $section-map--font;
+  color: $section-map-h2--color;
+  width: 83%;
+  margin: auto;
+  margin-left: 8%;
+  margin-bottom: 20px;
+
+  transition: all 0.5s;
+  opacity: 0;
+  transform: translateY(-20px);
+}
+.section-map h3 {
+  font-family: $section-map--font;
+  color: $section-map-h3--color;
+}
+
+.section-map .h3-privacy {
+  font-size: $section-map-h3-privacy--font-size;
+}
+
+p#privacyText {
+  font-size: $section-map-p-privacyText--font-size;
+}
+
+// Media queries
+@media screen and (max-width: 1199px) {
+  .section-map h2 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .section-map .h3-privacy {
+    font-size: $section-map-h3-privacy-sm--font-size;
+    color: $section-map-h3-privacy--color;
+  }
+
+  .h3-location-alicante {
+    margin-top: 50px;
+  }
+}

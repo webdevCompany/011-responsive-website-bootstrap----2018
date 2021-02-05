@@ -1,0 +1,41 @@
+// footer typography
+
+footer h2 {
+  font-family: $base--font;
+  font-size: $footer-h2--font-size;
+  margin-top: 77px;
+}
+
+footer .footer-paragraph-1 {
+  font-size: $footer-paragraph-1--font-size;
+  font-family: base-font;
+  width: 90%;
+  margin: auto;
+}
+
+.footer-highlight {
+  color: $footer--highlight;
+}
+
+.footer-social-media-icons {
+  font-size: $footer-icons--font-size;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-last-paragraph {
+  font-size: $footer-las-paragraph--font-size;
+  margin-top: 100px;
+  color: $footer-section-last-paragraph--color;
+  width: 90%;
+  margin: auto;
+}
+
+// Media queries
+@media screen and (max-width: 400px) {
+  .footer-last-paragraph {
+    position: relative;
+    bottom: 10px;
+  }
+}

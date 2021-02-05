@@ -1,0 +1,23 @@
+.p-belt-1 {
+  margin-top: 20px;
+
+  font-size: $p-belt-1--font-size;
+
+  font-family: $belt-section-p-belt-1--font;
+  color: $belt-section-p-belt-1--color;
+}
+
+.p-belt-2 {
+  font-family: $belt-section-p-belt-2--font;
+  color: $belt-section-p-belt-2--color;
+}
+
+// Media queries
+@media screen and (max-width: 580px) {
+  .p-belt-1 {
+    margin-left: -5px;
+  }
+  .belt-hide-314 {
+    display: none;
+  }
+}

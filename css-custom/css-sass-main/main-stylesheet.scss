@@ -1,0 +1,48 @@
+// These files are imports and you save changes they don't compile
+// you need to save the main.scss file to save and compile the changes
+
+@import '../00-fonts-ready/pinyonscript-regular-webfont.css';
+@import '../00-base/_stylesheet-01-variables.scss';
+@import '../00-base/_stylesheet-02-typography.scss';
+@import '../00-base/_stylesheet-03-layout.scss';
+@import '../00-base/_stylesheet-04-component-arrow-page-scroll-sidebar.scss';
+
+@import '../01-header/_01-navigation-layout.scss';
+@import '../01-header/_02-navigation-list-1-items.scss';
+@import '../01-header/_03-navigation-list-2-icons.scss';
+@import '../01-header/_04-navigation-dropdown.scss';
+@import '../01-header/_05-navigation-toggle.scss';
+
+@import '../02-showcase/_01-showcase-layout.scss';
+@import '../02-showcase/_02-showcase-buttons.scss';
+@import '../02-showcase/_03-showcase-typography.scss';
+@import '../02-showcase/_04-showcase-z-index.scss';
+
+@import '../03-belt-section/_01-belt-layout.scss';
+@import '../03-belt-section/_02-belt-typography.scss';
+
+@import '../04-white-section/_01-white-section-layout.scss';
+@import '../04-white-section/_02-white-section-typography.scss';
+@import '../04-white-section/_03_scroll__opacity.scss';
+
+@import '../05-products-section/_01-products-section-layout.scss';
+@import '../05-products-section/_02-products-section-typography.scss';
+@import '../05-products-section/_03-products-section-components-big-panel.scss';
+@import '../05-products-section/_04-products-section-components-small-panel.scss';
+@import '../05-products-section/_05-products-section-components-buttons.scss';
+@import '../05-products-section/_06-products-section-components-modal.scss';
+@import '../05-products-section/_07_scroll__opacity.scss';
+
+@import '../06-map-section/_01-map-section-layout.scss';
+@import '../06-map-section/_02-map-section-typography.scss';
+@import '../06-map-section/_03-map-section-components-google-map.scss';
+@import '../06-map-section/_04-map-section-components-socialmedia-icons.scss';
+@import '../06-map-section/_05-map-section-components-form.scss';
+@import '../06-map-section/_06-map-section-components-form-button.scss';
+@import '../06-map-section/_07_scroll__opacity.scss';
+
+@import '../07-footer/_01-footer-layout.scss';
+@import '../07-footer/_02-footer-typography.scss';
+@import '../07-footer/_03-footer-components.scss';
+
+@import '../08-arrow-sidebar/_01-component-arrow-sidebar.scss';

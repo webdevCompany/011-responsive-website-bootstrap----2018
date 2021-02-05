@@ -1,0 +1,33 @@
+// map section component form
+
+.section-map-h2-header {
+  width: 85%;
+}
+
+.form-privacy-collapse {
+  transition: all 0.4s;
+}
+
+.form-privacy-collapse:hover {
+  color: $form-privacy--color;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+label {
+  opacity: 0;
+  transition: all 0.4s;
+  transform: translateX(-20px);
+}
+
+input {
+  opacity: 0;
+  transition: all 0.4s;
+  transform: translateX(20px);
+}
+
+textarea {
+  opacity: 0;
+  transition: all 0.4s;
+  transform: translateX(20px);
+}

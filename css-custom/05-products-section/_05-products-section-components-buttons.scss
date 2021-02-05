@@ -1,0 +1,114 @@
+// big panel component buttons
+
+.big-panel-button-wrapper {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+button.products-big-panel-button-brown {
+  width: 120px;
+  line-height: 25px;
+  padding: 5px;
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: $products-big-panel-button--bg;
+  border: $products-big-panel-button--border;
+  box-shadow: $products-big-panel-button--box-shadow;
+  color: $products-big-panel-button--color;
+  outline: 0px;
+  transition: all 0.2s;
+}
+
+button.products-big-panel-button-brown:focus,
+button.products-big-panel-button-brown:active {
+  background-color: $products-big-panel-button--active--focus--bg;
+  color: $products-big-panel-button--active--focus--color;
+  border-radius: 4px;
+  transform: translateY(2px);
+  border: $products-big-panel-button--active--focus--border;
+  box-shadow: $products-big-panel-button--active--focus--box-shadow;
+}
+// end big panel component buttons
+
+// small panel component buttons
+
+.small-panel-link-button-line {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+button.products-small-panel-button-brown {
+  width: 120px;
+  line-height: 30px;
+  border-radius: 4px;
+  border: 0px;
+  outline: $component-small-panel-button--outline;
+  background-color: $component-small-panel-button--bg;
+  box-shadow: $component-small-panel-button--box-shadow;
+  color: $component-small-panel-button--color;
+  transition: all 0.3s;
+}
+
+button.products-small-panel-button-brown:focus,
+button.products-small-panel-button-brown:active {
+  width: 120px;
+  line-height: 30px;
+  border-radius: 4px;
+  border: 0px;
+  outline: $component-small-panel-button--active--focus--outline;
+  background-color: $component-small-panel-button--active--focus--bg;
+  color: $component-small-panel-button--active--focus--color;
+  box-shadow: $component-small-panel-button--active--focus--box-shadow;
+}
+// end small panel component buttons
+
+// Media queries
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  button.products-big-panel-button-brown {
+    width: 120px;
+    line-height: 25px;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 321px) {
+  button.products-big-panel-button-brown {
+    width: 120px;
+    line-height: 25px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .big-panel-button-wrapper {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  button.products-big-panel-button-brown {
+    flex-grow: 1;
+    line-height: 25px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  // small panel button small device
+  .small-panel-link-button-line {
+    width: 100%;
+  }
+
+  button.products-small-panel-button-brown {
+    width: 120px;
+    flex-grow: 1;
+  }
+}

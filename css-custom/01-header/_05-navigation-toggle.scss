@@ -1,0 +1,11 @@
+// navbar toggle small devices
+.navbar-default .navbar-toggle {
+  margin-top: 17px;
+  border: 0px;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: $toggle-open-mobile-nav--focus-hover--bg;
+  border: $toggle-open-mobile-nav--focus-hover--border;
+}

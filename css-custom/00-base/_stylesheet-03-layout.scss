@@ -1,0 +1,33 @@
+body {
+  width: 100%;
+  height: auto;
+}
+
+header {
+  width: 100%;
+  height: auto;
+}
+
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.container-fluid,
+.container {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+// Media queries
+@media screen and (max-width: 992px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+}

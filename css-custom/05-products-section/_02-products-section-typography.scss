@@ -1,0 +1,42 @@
+// products section typography
+
+.section-products h2 {
+  width: 95%;
+  font-family: $products-section-h2--font;
+  color: $products-section-h2--color;
+  margin: auto;
+}
+
+.similar-offers-h2 {
+  width: 98%;
+  margin-top: 40px;
+}
+
+.section-products p {
+  font-size: $products-section-p--font-size;
+}
+
+.section-products p.section-products-p1 {
+  width: 90%;
+  margin: 24px auto 44px auto;
+  color: $products-section-p-1--color;
+  font-size: $products-section-p-1--font-size;
+  line-height: 1.6;
+}
+.big-panel-h3 {
+  transition: all 0.3s;
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+// Media queries
+@media screen and (max-width: 991px) {
+  .section-products h2 {
+    border-bottom: $products-section-h2-sm--border-bottom;
+  }
+
+  .section-products p.section-products-p1 {
+    margin: 24px auto 0px auto;
+    line-height: 1.6;
+  }
+}

@@ -1,0 +1,75 @@
+// dropdown
+
+// The trigger for the dropdown menu is [.ul-pages > li > a]
+// When you pass the mouse over the trigger behaves as .ul-pages list li
+// When you click on the trigger behaves as trigger (different style)
+
+// dropdown menu:focus (when you click the dropdown)
+// This is a [.ul-pages > li > a] (ON CLICK is the TRIGGER to open the dropdown menu)
+.nav.navbar-nav.ul-pages .dropdown a:focus {
+  color: $navigation-menu-link--hover;
+  transition: all 0.4s;
+}
+
+// This is the ul.dropdown-menu
+// Click on the trigger to open the ul.dropdown-menu and give it style
+.navbar-default .navbar-nav.ul-pages > li > .dropdown-menu {
+  margin-top: 5px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding: 0px;
+}
+
+// The .navbar-nav.ul-pages li  wraps the item that opens the dropdown
+// To style the dropdown toggle when the dropdown is open
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+  background-color: $nav-button-open-dropdown;
+  border: $nav--a-open--border;
+}
+
+// To style the list inside the dropdown-menu
+.navbar-default .navbar-nav.ul-pages li ul li {
+  width: 100%;
+  text-align: center;
+}
+
+.navbar-default .navbar-nav.ul-pages > li > ul > li > a {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  line-height: 34px;
+  background-color: $nav-lg-submenu-li-a--bg;
+  color: $nav-lg-submenu-li-a--color;
+}
+
+.navbar-default .navbar-nav.ul-pages > li > ul > li > a:hover {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  line-height: 34px;
+  background-color: $nav-lg-submenu-li-a-hover--bg;
+  color: $nav-lg-submenu-li-a-hover--color;
+}
+
+// Media queries
+@media screen and (max-width: 767px) {
+  .navbar-default .navbar-collapse {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .navbar-default .navbar-nav.ul-pages > li > .dropdown-menu {
+    margin-top: 0px;
+    padding: 0px;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    background-color: $nav-mobile-submenu-li-a--bg;
+    color: $nav-mobile-submenu-li-a--color;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+    background-color: $nav-mobile-submenu-li-a--hover--bg;
+    color: $nav-mobile-submenu-li-a--hover--color;
+  }
+}

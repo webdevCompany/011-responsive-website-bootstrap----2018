@@ -1,0 +1,1 @@
+.section-white-opacity-active{animation:changeOpacity .4s linear 1 forwards}@keyframes changeOpacity{0%{opacity:0}100%{transform:translateY(0px);opacity:1;transition:all .4s}}

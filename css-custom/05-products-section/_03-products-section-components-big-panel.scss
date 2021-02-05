@@ -1,0 +1,49 @@
+// big panel component
+
+// Bootstrap 3.0 panel default setting to reset
+.panel-default {
+  border: 0px;
+}
+
+// Bootstrap 3.0 panel default setting to reset
+.panel-default > .panel-heading {
+  background-color: $component-big-panel-heading--bg;
+  border-color: $component-big-panel-heading--border-color;
+}
+
+.component-big-panel {
+  width: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: $component-big-panel--bg;
+}
+
+.component-big-panel-heading {
+  max-width: 90%;
+  margin: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+}
+
+.component-big-panel h3 {
+  color: $component-big-panel-h3--color;
+}
+
+.component-big-panel-panel-body > p {
+  text-align: justify;
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+  color: $products-base--color;
+}
+.component-big-panel-heading img {
+  width: 100%;
+}
+
+// Media queries
+@media screen and (max-width: 320px) {
+  .component-big-panel-panel-body .component-big-panel-body-hide-at-320 {
+    display: none;
+  }
+}

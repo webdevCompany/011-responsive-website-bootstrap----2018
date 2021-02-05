@@ -1,0 +1,288 @@
+// base font
+$base--font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$secondary-font: 'Times New Roman';
+$font-cursive: 'Pinyon Script', cursive;
+
+// base background-color
+$base--bg: #310307;
+
+// base color
+$base--color: #b31a1a;
+$base-red: #b31a1a;
+$light-grey: #d2d0d0;
+$dark-grey: #8c8a8a;
+$red-details: #e10f24;
+$red-link: #eb5353;
+$white: #fff;
+$black: #000;
+
+// link color
+$link-base-color: #eb5353;
+$link-base-visited: #eb5353;
+$link-base-hover: #eb5353;
+$link-base-active: #eb5353;
+
+// base font-size  // [ Type Scale: Perfect Fifth ]
+// [ min-width: 992px ]
+$html: 16px;
+// $h1-lg-device: 3.375rem;   this is type scale size [too big for me]
+$h1-lg-device: 2.8rem; // my custom size.  It is not [type scale]
+$h2-lg-device: 2.25rem;
+$h3-lg-device: 1.5rem;
+$p-big-lg-device: 1.5rem;
+$p-lg-device: 1rem;
+$p-small-lg-device: 0.667rem;
+
+// base font-size  // [ Type Scale: Minor Third ]
+// [ max-width: 767px ]
+$h1-md-device: 2.074rem;
+$h2-md-device: 1.728rem;
+$h3-md-device: 1.44rem;
+$p-big-md-device: 1.2rem;
+$p-md-device: 1rem;
+$p-small-md-device: 1rem;
+
+// base font-size  // [ Type Scale: Major Second ]
+// [ max-width: 400px ]
+$h1-mobile: 1.602rem;
+$h2-mobile: 1.424rem;
+$h3-mobile: 1.266rem;
+$p-big-mobile: 1.125rem;
+$p-mobile: 1rem;
+$p-small-mobile: 0.889rem;
+
+// HEADER SECTION
+$logo--color: $base--color;
+$navigation-menu-link: $base--color;
+$navigation-menu-link--hover: #f200ef;
+$navigation-menu-link--focus: #f200ef;
+$navigation-menu-link--font: $base--font; // this is to fix now!!!
+
+$navigation-dropdown-open-a-bg: $base--bg;
+$navigation-submenu-bg: #390a07;
+
+$navigation-submenu-link-hover-bg: #4e2b24;
+$navigation-submenu-link-hover-color: #f055b2;
+
+$navigation-submenu-a-small-device-bg: #512d25;
+$navigation-submenu-a-small-device-color: rgb(108, 111, 106);
+
+$navigation-submenu-a-small-device-hover-bg: #7f0812;
+$navigation-submenu-a-small-device-hover-color: rgb(108, 111, 106);
+
+// @media screen and (max-width: 767px)
+$mobile-nav-border-bottom--color: #c11313;
+
+$mobile-nav-li-a--bg: #4c2225;
+$mobile-nav-li-a--color: #ff0303;
+$mobile-nav-li-a-hover--bg: lighten(#4c2225, 10%);
+$mobile-nav-li-a-hover--color: rgb(246, 255, 246);
+
+$mobile-nav-button-open-submenu: #38191b;
+
+$nav-icon-sm--font-size: 40px;
+
+// NAVBAR dropdown-menu
+$toggle-open-mobile-nav--focus-hover--bg: #790303;
+$toggle-open-mobile-nav--focus-hover--border: 0px;
+
+$nav-lg-submenu-li-a--bg: #3c0101;
+$nav-lg-submenu-li-a--color: #e6646d;
+
+$nav-lg-submenu-li-a-hover--bg: #821804;
+$nav-lg-submenu-li-a-hover--color: #e6646d;
+
+$nav-button-open-dropdown: $base--bg;
+$nav--a-open--border: 0px solid transparent;
+
+$nav-mobile-submenu-li-a--bg: #3e1317;
+$nav-mobile-submenu-li-a--color: #989090;
+$nav-mobile-submenu-li-a--hover--bg: #6f3236;
+$nav-mobile-submenu-li-a--hover--color: #989090;
+
+// SHOWCASE SECTION
+$cover-intro--bg: #000;
+
+$showcase-h1--color: rgb(167, 4, 29);
+$showcase-h1--font: $secondary-font;
+
+$showcase-p-big--color: $dark-grey;
+$showcase-p-big--font: $secondary-font;
+
+$showcase-p-small--color: #4c4c4c;
+$showcase-p-small--font: $font-cursive;
+
+$showcase-btn--border-color: $red-details;
+$showcase-btn--color: rgb(241, 39, 39);
+$showcase-btn--bg: transparent;
+
+$showcase-btn--hover--box-shadow: 0 0 10px $red-details;
+$showcase-btn--hover--color: #ccc;
+$showcase-btn--focus--color: #ccc;
+$showcase-btn--hover--border-color: transparent;
+
+$showcase-btn--focus--bg: rgb(241, 39, 39);
+$showcase-btn--focus--outline: transparent;
+
+$showcase-p-big--color: #691d1d;
+
+$showcase-p-small--font: $font-cursive;
+
+// BELT SECTION
+$belt-section--bg: #310307;
+$belt-be-box--bg: #880610;
+$red-box-belt--shadow: 0 0 5px 1px #000;
+
+$belt-section-p-belt-1--color: $dark-grey;
+$belt-section-p-belt-1--font: $base--font;
+$p-belt-1--font-size: 14px;
+
+$belt-section-p-belt-2--color: $dark-grey;
+$belt-section-p-belt-2--font: $font-cursive;
+
+$belt-be-icon--font-size: 24px;
+$belt-section-be-icon--color: #faf6f6;
+
+// WHITE SECTION
+$white-section--bg: $white;
+$white-section--font: $secondary-font;
+$white-section-icons--color: $base-red;
+$white-section-h3--color: #3c2020;
+$white-section-p--color: #948c8d;
+$white-section-a--color: $red-link;
+
+$white-section-icon--font-size: 50px;
+$white-section-h3--font-size: 18px;
+$white-section-article-p--font-size: 14px;
+$white-section-article-a--font-size: 14px;
+
+// (max-width: 1199px)
+$white-section-icon--md--font-size: 40px;
+
+// (max-width: 992px)
+$white-section-icon--sm--font-size: 30px;
+$white-section-h3--sm--font-size: 16px;
+$white-section-article-p--sm--font-size: 14px;
+
+// PRODUCTS SECTION
+$products-base--color: #b6aaa8;
+$products-section-container--bg: #400101;
+$products-section--color: #faf7f7;
+
+$products-section-h2--color: $light-grey;
+$products-section-h2--font: $base--font;
+
+$products-section-p-1--color: $products-base--color;
+$products-section-p-1--font-size: 16px;
+
+$products-section-p--font-size: 14px;
+
+// (max-width: 991px)
+$products-section-h2-sm--border-bottom: 1px solid #995b44;
+
+// COMPONENT BIG PANEL
+$component-big-panel-heading--bg: transparent;
+$component-big-panel-heading--border-color: transparent;
+$component-big-panel--bg: #512d25;
+
+$component-big-panel--border-color: #512d25;
+$component-big-panel-link: #1886cc;
+
+$component-big-panel-h3--color: #b6aaa8;
+
+$products-big-panel-button--bg: rgba(168, 104, 79, 0.75);
+$products-big-panel-button--color: $light-grey;
+$products-big-panel-button--border: 1px solid transparent;
+$products-big-panel-button--box-shadow: 0 5px 3px 0 #2f180f;
+
+$products-big-panel-button--active--focus--bg: #4a2e22;
+$products-big-panel-button--active--focus--color: #7b7c73;
+$products-big-panel-button--active--focus--border: 1px solid #6d4232;
+
+$products-big-panel-button--active--focus--box-shadow: 0 2px 3px #131212;
+
+// COMPONENT SMALL PANEL
+$component-small-panel--bg: #512d25;
+$component-small-panel--border-top: 32px solid #995b44;
+
+$small-panel-toggle-collapse--bg: #925944;
+
+// component small panel button brown
+$component-small-panel-button--bg: rgba(153, 48, 4, 0.6);
+$component-small-panel-button--color: #ccc;
+$component-small-panel-button--box-shadow: 0 2px 10px 2px #2f180f;
+$component-small-panel-button--outline: 0px solid transparent;
+
+$component-small-panel-button--active--focus--bg: rgba(91, 56, 43, 0.75);
+$component-small-panel-button--active--focus--color: #ccc;
+$component-small-panel-button--active--focus--box-shadow: 0 1px 2px 0px #2f180f;
+$component-small-panel-button--active--focus--outline: 0px solid transparent;
+
+$component-small-panel-p--font-size: 14px;
+
+// PRODUCTS SECTION MODAL
+$component-modal-header--bg: #7d3a40;
+$component-modal-header-h3--color: #e56a75;
+
+$component-modal-body--bg: #fff;
+$component-modal-body-label--color: #ff00ff;
+
+$component-modal-footer--bg: #99474e;
+$component-modal-footer-a--color: #fff;
+
+// MAP SECTION
+$section-map-container--bg: #663c2d;
+$section-map--color: $dark-grey;
+$section-map--font: $base--font;
+$section-map-h2--color: #ffc300;
+$section-map-h3--color: #af750a;
+$section-map-h3-privacy--color: #ccc;
+$section-map-h3-privacy--font-size: 16px;
+$section-map-h3-privacy-sm--font-size: 14px;
+
+$section-map-p-privacyText--font-size: 14px;
+
+// FORM
+
+$button-form-submit--color: #fdf2f2;
+$button-form-submit--border-color: #ec470c;
+$button-form-submit--bg: #ec470c;
+$button-form-submit--font-size: 18px;
+$button-form-submit--box-shadow: 0 3px 2px 0 rgb(92, 42, 2);
+
+$button-form-submit--hover--color: #fff;
+$button-form-submit--hover--border-color: #ec470c;
+$button-form-submit--hover--bg: #a42f05;
+
+$button-form-submit--focus--bg: #ec470c;
+$button-form-submit--focus--color: rgb(255, 200, 4);
+$button-form-submit--focus--border-color: yellow;
+$button-form-submit--focus--outline: green;
+$button-form-submit--focus--shadow: 0 1px 0px 0 rgb(92, 42, 2);
+
+$form-privacy--color: orange;
+$map-icons--color: orange;
+$map-icons--border: 1px solid rgb(189, 138, 8);
+
+// FOOTER SECTION
+
+$footer--bg: #414041;
+$blue-link: #1886cc;
+
+$footer-section-a--color: $blue-link;
+$footer-section-a--font: $base--font;
+
+$footer-section-last-paragraph--color: #5d5a5a;
+$footer-p--color: #6b6565;
+
+$footer-h2--font-size: 24px;
+$footer-paragraph-1--font-size: 14px;
+$footer-icons--font-size: 15px;
+$footer-las-paragraph--font-size: 11px;
+
+$footer-hr--border: 1px solid rgb(74, 73, 74);
+
+$footer-component-wrapper--bg: transparent;
+$footer--highlight: magenta;
+
+$footer-component-a--font-size: 12px;

@@ -1,0 +1,95 @@
+// showcase z-index
+
+// The showcase has 2 different animations
+
+// 1. There is a layer on top of the showcase-bg that goes from black to transparent
+// 2. The layer on top after the animation 1 is blocking the showcase and has to
+// disappear after the intro so I created other animation to change the z-index
+
+// SHOWCASE INTRO ANIMATION COMPONENT.SCSS
+
+/*
+.cover-intro     The layer on top of the showcase is hiding:
+    .showcase-bg (background layer)
+    h1
+    p.one
+    p.two
+    .showcase-buttons
+
+and the belt section below is affected because the belt section has a box with margin-top: -4px;
+
+*/
+.showcase-bg {
+  z-index: -4;
+}
+
+.row-outter-showcase-section {
+  z-index: -4;
+  .col-xs-12,
+  .col-sm-12,
+  .col-md-12,
+  .col-lg-12 {
+    z-index: 20;
+  }
+}
+
+.showcase h1 {
+  opacity: 0;
+  animation: showcaseTextAnimation 3s 1s linear 1 forwards;
+}
+
+.showcase-p-big {
+  opacity: 0;
+  animation: showcaseTextAnimation 3s 2s linear 1 forwards;
+}
+
+.showcase-p-small {
+  opacity: 0;
+  animation: showcaseTextAnimation 3s 4s linear 1 forwards;
+}
+
+.flexbox-buttons {
+  opacity: 0;
+  animation: showcaseTextAnimation 3s 5s linear 1 forwards;
+}
+
+// This is the layer that hides everything
+.cover-intro {
+  z-index: 10;
+  opacity: 1;
+  animation: intro-opacity 4s linear 1 forwards,
+    position-z-index 1s 5.5s linear 1 forwards;
+}
+
+// belt section
+.box-with-position-relative {
+  z-index: 90;
+}
+
+// KEYFRAMES
+@keyframes intro-opacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes showcaseTextAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes position-z-index {
+  0% {
+    z-index: 10;
+  }
+  100% {
+    z-index: -70;
+  }
+}

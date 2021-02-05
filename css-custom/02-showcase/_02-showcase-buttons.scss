@@ -1,0 +1,53 @@
+// showcase buttons
+
+.flexbox-buttons {
+  width: 268px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 40px;
+  animation: showcaseTextAnimation 3s 5s linear 1 forwards;
+  button:nth-of-type(2) {
+    margin-left: 20px;
+  }
+}
+
+.flexbox-buttons .btn {
+  flex: 1;
+  border-color: $showcase-btn--border-color;
+  background: $showcase-btn--bg;
+  color: $showcase-btn--color;
+  transition: all 0.5s;
+
+  &:hover,
+  .btn-info:hover {
+    border-color: $showcase-btn--hover--border-color;
+    color: $showcase-btn--hover--color;
+    box-shadow: $showcase-btn--hover--box-shadow;
+  }
+
+  &:focus {
+    background: $showcase-btn--focus--bg;
+    outline: $showcase-btn--focus--outline;
+    color: $showcase-btn--focus--color;
+  }
+}
+
+// Media queries
+@media screen and (max-width: 330px) {
+  .flexbox-buttons {
+    width: 95%;
+    flex-direction: column;
+  }
+
+  .flexbox-buttons > .btn {
+    flex: 1;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .flexbox-buttons > button:nth-of-type(2) {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,33 @@
+// modal component
+
+// It is a Bootstrap 3.0 component there is no need for style
+// It will not take any extra space from any section,
+// it will not make changes on the layout of any section you add the code
+// Modal layout will appear by default that way.
+
+//   There is only need for typography, bg-color, color
+
+.products-component-modal-header {
+  background-color: $component-modal-header--bg;
+}
+
+.products-component-modal-header h3 {
+  color: $component-modal-header-h3--color;
+}
+
+.products-component-modal-body {
+  background-color: $component-modal-body--bg;
+}
+
+.products-component-modal-body label {
+  color: $component-modal-body-label--color;
+}
+
+.products-component-modal-footer {
+  background-color: $component-modal-footer--bg;
+  a {
+    color: $component-modal-footer-a--color;
+  }
+}
+
+// end product component modal

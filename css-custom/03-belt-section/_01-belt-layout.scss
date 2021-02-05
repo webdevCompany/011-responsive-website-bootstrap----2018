@@ -1,0 +1,75 @@
+// belt-wrapper
+.section-belt-flex-box {
+  height: 97px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: $belt-section--bg;
+}
+
+.red-box-belt {
+  position: relative;
+  top: -4px;
+  left: 10px;
+  width: 76px;
+  height: 106px;
+  background-color: $belt-be-box--bg;
+  z-index: 90;
+  box-shadow: $red-box-belt--shadow;
+  float: right;
+  // this is to align center font-awesome icon with flexbox
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// text box belt
+.text-box {
+  margin-left: 20px;
+}
+
+.fa-behance {
+  font-size: $belt-be-icon--font-size;
+  color: $belt-section-be-icon--color;
+}
+
+.showcase .col-xs-12,
+.showcase .col-sm-12,
+.showcase .col-md-12,
+.showcase .col-lg-12 {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+// Media queries
+@media screen and (max-width: 991px) {
+  .hide424 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hide424 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 538px) {
+  .hide424-2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 314px) {
+  .belt-hide-314 {
+    display: none;
+  }
+}

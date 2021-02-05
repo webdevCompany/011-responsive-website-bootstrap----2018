@@ -1,0 +1,29 @@
+// map section layout
+.container-fluid {
+  width: 100%;
+}
+
+.container-section-map {
+  background-color: $section-map-container--bg;
+  color: $section-map--color;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.section-map {
+  width: 100%;
+  margin: auto;
+}
+
+// Media queries
+@media screen and (max-width: 1199px) {
+  .section-map {
+    width: 80%;
+  }
+
+  .container-section-map {
+    min-height: 500px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}

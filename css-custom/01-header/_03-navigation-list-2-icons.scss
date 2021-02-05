@@ -1,0 +1,59 @@
+// navigation ul list 2 (icons)
+
+.navbar-default .navbar-nav.ul-icons {
+  width: 25%;
+  float: right;
+}
+
+.navbar-default .navbar-nav.ul-icons li {
+  width: 25%;
+  text-align: center;
+}
+
+// This is to style navigation (social media icons)
+.navbar-default .navbar-nav.ul-icons li > a {
+  padding: 0px;
+  color: $base-red;
+}
+
+.navbar-default .navbar-nav.ul-icons li > a:hover,
+.navbar-default .navbar-nav.ul-icons li > a:focus,
+.navbar-default .navbar-nav.ul-icons li > a:active {
+  color: $navigation-menu-link--hover;
+  position: relative;
+  transition: all 0.2s;
+  transform: scale(1.7, 1.7);
+}
+
+// Media queries
+@media screen and (max-width: 767px) {
+  .navbar-default .navbar-nav.ul-icons {
+    width: auto;
+    float: none;
+    margin-left: 0px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .navbar-default .navbar-nav.ul-icons li {
+    width: auto;
+    line-height: 34px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .navbar-default .navbar-nav.ul-icons li a {
+    width: auto;
+    text-align: center;
+    line-height: 44px;
+  }
+
+  .navbar-default .navbar-nav.ul-icons li a:hover {
+    width: auto;
+    text-align: center;
+    line-height: 34px;
+    transform: scale(1, 1);
+    font-size: $nav-icon-sm--font-size;
+    line-height: 44px;
+  }
+}

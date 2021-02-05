@@ -1,0 +1,61 @@
+//  ul list 1 (pages)
+// The ul-pages have the background-color from the header
+.navbar-default .navbar-nav.ul-pages {
+  width: 60%;
+  float: left;
+  margin-left: 10%;
+  text-align: center;
+}
+
+.navbar-default .navbar-nav.ul-pages li {
+  width: 33.3%;
+  text-align: center;
+}
+
+.navbar-default .navbar-nav.ul-pages li a {
+  padding: 0px;
+  font-family: $navigation-menu-link--font;
+  color: $base--color;
+  transition: all 0.4s;
+}
+
+.navbar-default .navbar-nav.ul-pages li > a:hover,
+.navbar-default .navbar-nav.ul-pages li > a:focus,
+.navbar-default .navbar-nav.ul-pages li > a:active {
+  color: $navigation-menu-link--hover;
+}
+
+// Media queries
+@media screen and (max-width: 767px) {
+  .navbar-default .navbar-nav.ul-pages {
+    width: 100%;
+    float: none;
+    margin-left: 0px;
+    text-align: center;
+    padding: 0px;
+  }
+
+  .navbar-default .navbar-nav.ul-pages li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-default .navbar-nav.ul-pages li a {
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    background-color: $mobile-nav-li-a--bg;
+    color: $mobile-nav-li-a--color;
+  }
+
+  .navbar-default .navbar-nav.ul-pages li a:hover {
+    background-color: $mobile-nav-li-a-hover--bg;
+    color: $mobile-nav-li-a-hover--color;
+  }
+
+  // MOBILE NAV BUTTON OPEN SUBMENU
+  .navbar-default .navbar-nav.ul-pages li:nth-child(3) > a:hover,
+  .navbar-default .navbar-nav.ul-pages li:nth-child(3) > a:active {
+    background-color: $mobile-nav-button-open-submenu;
+  }
+}

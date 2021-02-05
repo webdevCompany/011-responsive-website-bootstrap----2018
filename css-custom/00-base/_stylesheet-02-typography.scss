@@ -1,0 +1,88 @@
+html {
+  font-size: $html;
+}
+body {
+  font-family: $base--font;
+  color: $light-grey;
+}
+
+a:link {
+  color: $link-base-color;
+}
+a:visited {
+  color: $link-base-visited;
+}
+a:hover {
+  color: $link-base-hover;
+}
+a:active {
+  color: $link-base-active;
+}
+
+// More than 767px  Type Scale is 1.333  [Type Scale:PERFECT FIFTH ]
+@media screen and (min-width: 992px) {
+  html {
+    font-size: $html;
+  }
+  h1 {
+    font-size: $h1-lg-device;
+  }
+  h2 {
+    font-size: $h2-lg-device;
+  }
+  h3 {
+    font-size: $h3-lg-device;
+  }
+  p.p-big {
+    font-size: $p-big-lg-device;
+  }
+  p {
+    font-size: $p-lg-device;
+  }
+  p.p-small {
+    font-size: $p-small-lg-device;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 991px) {
+  h1 {
+    font-size: $h1-md-device;
+  }
+  h2 {
+    font-size: $h2-md-device;
+  }
+  h3 {
+    font-size: $h3-md-device;
+  }
+  p.p-big {
+    font-size: $p-big-md-device;
+  }
+  p {
+    font-size: $p-md-device;
+  }
+  p.p-small {
+    font-size: $p-small-md-device;
+  }
+}
+
+// up to 767px  Type Scale is 1.200  [ Minor Third ]
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: $h1-mobile;
+  }
+  h2 {
+    font-size: $h2-mobile;
+  }
+  h3 {
+    font-size: $h3-mobile;
+  }
+  p.p-big {
+    font-size: $p-big-mobile;
+  }
+  p {
+    font-size: $p-mobile;
+  }
+  p.p-small {
+    font-size: $p-small-mobile;
+  }
+}

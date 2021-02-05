@@ -1,0 +1,50 @@
+// footer component ul list
+
+.footer-list-component {
+  width: 20%;
+}
+
+.footer-list-component ul {
+  text-align: center;
+}
+
+.footer-list-component ul li {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.footer-list-component ul li a {
+  font-size: $footer-component-a--font-size;
+  color: $blue-link;
+}
+
+// Media queries
+@media screen and (max-width: 992px) {
+  .footer-list-component {
+    width: 25%;
+  }
+
+  .footer-list-component:nth-child(3) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-list-component {
+    width: 33.3%;
+  }
+
+  .footer-list-component:nth-child(2) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 577px) {
+  .footer-list-component {
+    width: 30%;
+  }
+
+  .footer-list-component:nth-child(4) {
+    display: none;
+  }
+}

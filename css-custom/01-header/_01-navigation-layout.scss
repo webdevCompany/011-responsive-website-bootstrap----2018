@@ -1,0 +1,67 @@
+// header layout
+
+// navigation
+.navbar.navbar-default {
+  margin-bottom: 0px;
+  background-color: $base--bg;
+  border: 0px;
+}
+
+// navbar.navbar-default is divided by .navbar-header(logo) and .navbar-collapse
+// (ul list items)
+.navbar.navbar-default .navbar-header,
+.navbar.navbar-default .navbar-collapse {
+  margin-right: 0px;
+  margin-left: 0px;
+  height: 65px;
+}
+
+// WEBSITE LOGO
+// WEBSITE LOGO WRAPPER
+// The logo (.navbar-brand) is inside the .navbar-header
+.navbar.navbar-default .navbar-brand {
+  padding: 0px;
+  margin-top: 10px;
+  margin-left: 20px;
+  z-index: 1040;
+}
+
+// WEBSITE LOGO GLYPHICONS
+.navbar.navbar-default .navbar-brand .fa-digg,
+.navbar.navbar-default .navbar-brand .fa-life-ring {
+  font-size: 40px;
+  color: $logo--color;
+  padding-bottom: 10px;
+  line-height: 55px;
+}
+
+// NAVIGATION ITEMS WRAPPER
+// The ul lists items are inside the .navbar-collapse
+.navbar.navbar-default .navbar-collapse {
+  width: 70%;
+  margin-top: 40px;
+  float: right;
+}
+
+// Media queries
+@media screen and (min-width: 768px) {
+  // navbar.less:661
+  .navbar {
+    border-radius: 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar.navbar-default .navbar-collapse {
+    width: 100%;
+    margin-top: 0px;
+    float: none;
+    height: auto;
+    // border-bottom small devices (line between the header and list items)
+    border-color: $mobile-nav-border-bottom--color;
+  }
+
+  .navbar-nav {
+    margin: 0px 0px;
+  }
+}

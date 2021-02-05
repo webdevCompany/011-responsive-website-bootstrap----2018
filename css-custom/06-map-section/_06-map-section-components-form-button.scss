@@ -1,0 +1,35 @@
+.button-form-submit {
+  width: 140px;
+  line-height: 30px;
+  background-color: $button-form-submit--bg;
+  color: $button-form-submit--color;
+  border-color: $button-form-submit--border-color;
+  box-shadow: $button-form-submit--box-shadow;
+  font-size: 18px;
+  margin-top: 20px;
+  transition: all 0.3s;
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.button-form-submit:hover {
+  color: $button-form-submit--hover--color;
+  background-color: $button-form-submit--hover--bg;
+  border-color: $button-form-submit--hover--border-color;
+}
+
+.btn.btn-default.button-form-submit:focus {
+  background-color: $button-form-submit--focus--bg;
+  color: $button-form-submit--focus--color;
+  border-color: $button-form-submit--focus--border-color;
+  outline: $button-form-submit--focus--outline;
+  box-shadow: $button-form-submit--focus--shadow;
+  transform: translateY(2px);
+}
+
+// Media queries
+@media screen and (max-width: 400px) {
+  .button-form-submit {
+    width: 100%;
+  }
+}

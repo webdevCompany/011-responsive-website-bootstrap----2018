@@ -1,0 +1,111 @@
+// white section typography
+
+section.section-white .fa {
+  display: block;
+  font-size: $white-section-icon--font-size;
+  color: $white-section-icons--color;
+  width: auto;
+  text-align: center;
+  margin: auto;
+  transition: all 0.4s;
+}
+
+section.section-white article > header > h3 {
+  text-align: center;
+  font-size: $white-section-h3--font-size;
+  font-weight: bold;
+  color: $white-section-h3--color;
+}
+
+section.section-white article > p {
+  color: $white-section-p--color;
+  width: 80%;
+  font-size: $white-section-article-p--font-size;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  line-height: 21px;
+}
+
+p.show-at768only {
+  display: none;
+}
+
+section.section-white article a {
+  color: $white-section-a--color;
+  font-weight: bold;
+  float: right;
+  font-size: $white-section-article-a--font-size;
+  margin-right: 12%;
+  padding-bottom: 40px;
+}
+
+// Media queries
+@media screen and (max-width: 1199px) {
+  section.section-white .fa {
+    font-size: $white-section-icon--md--font-size;
+  }
+
+  .white-sec-text {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  section.section-white .fa {
+    font-size: $white-section-icon--sm--font-size;
+  }
+
+  section.section-white article > header > h3 {
+    font-size: $white-section-h3--sm--font-size;
+  }
+
+  section.section-white article > p {
+    font-size: $white-section-article-p--sm--font-size;
+  }
+
+  .section.section-white article a {
+    margin-bottom: 40px;
+  }
+
+  .white-sec-text {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  section.section-white {
+    text-align: justify;
+  }
+
+  section.section-white article > p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  p.show-at768only {
+    display: block;
+    width: 80%;
+  }
+
+  .section.section-white article a {
+    margin-bottom: 180px;
+  }
+}
+
+@media screen and (max-width: 583px) {
+  .hideat583 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  section.section-white p.show-at768only {
+    display: none;
+  }
+
+  .section.section-white article a {
+    margin-bottom: 80px;
+  }
+}
